@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Dashboard</title>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="E-mail address" onblur="validateEmail()">
+
+            <input type="password" id="password" placeholder="Password" onblur="validatePassword()">
+
+            <label for="remember-me">
+                <input type="checkbox" id="remember-me-check">
+                Remember me
+            </label>
+
+            <button type="button" id="login" onclick="login()">Sign In</button>
+
+            <!-- <div class="forgot-password">Forgot your password?</div> -->
+            <a href="#" id="forgotPasswordLink" onclick="openEmailClient()">Forgot your password?</a>
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

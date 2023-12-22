@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(33, 32, 32);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("./zentrades_cover.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#email,
+#password {
+    display: block;
+    width: 280px;
+    margin: auto;
+    padding: 15px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+#email::placeholder,
+#password::placeholder {
+    color: rgb(62, 62, 62);
+}
+
+#email {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+#password {
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+label {
+    /* margin-bottom: 5px; */
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#remember-me-check {}
+
+#login {
+    margin: auto;
+    display: block;
+    padding: 15px;
+    background-color: #ed5566;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    /* width: 300px; */
+    width: 300px;
+    border-radius: 7px;
+}
+
+#login:hover {
+    background-color: #ed5566;
+}
+
+.forgot-password {
+    color: #fff;
+    text-align: center;
+}
+
+.invalid-input {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
